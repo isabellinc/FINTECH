@@ -1,7 +1,7 @@
 {
   "name": "fintech",
   "version": "1.0.0",
-  "description": "",
+  "description": "Olá! Esse projeto está sendo desenvolvido no meu primeiro ano de faculdade no curso Análise e Desenvolvimento de Sistemas na instituição FIAP.O objetivo é criar uma aplicação web de uma empresa Fintech para ajudar pessoas a organizar suas finanças.\r Essa é a primeira tela da minha empresa CASHUP o projeto foi desenvolvido com essas tecnologias: HTML, Tailwind CSS e Node.js.",
   "main": "index.js",
   "scripts": {
     "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/CSS/styles.css --watch"
@@ -14,5 +14,13 @@
     "@tailwindcss/cli": "^4.3.0",
     "tailwindcss": "^4.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isabellinc/FINTECH.git"
+  },
+  "bugs": {
+    "url": "https://github.com/isabellinc/FINTECH/issues"
+  },
+  "homepage": "https://github.com/isabellinc/FINTECH#readme"
 }
