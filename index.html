@@ -12,39 +12,35 @@
 <body>
 
     <div class="bg-gradient-principal min-h-screen flex max-md:flex-col">
-        
-<aside class="logo-aside">            
-            
-    <div class="font-title justify-center content-center">
-                
-                <h1 class="text-4xl font-black text-logo ">CASHUP</h1>
-                <h4 class="font-semibold text-sm text-logo mb-6 ">Controle Financeiro</h4>
+
+        <aside class="logo-aside">
+            <div class="font-title text-center">
+                <h1 class="text-4xl font-black text-logo">CASHUP</h1>
+                <h4 class="font-semibold text-sm text-logo mb-6">Controle Financeiro</h4>
             </div>
-            <button class="button-signup hover:bg-[#9867C5] transition duration-150">Cadastrar</button>
+            <button class="button-signup">Cadastrar</button>
         </aside>
 
-        <main  class=" text-container">
-            <div class="flex flex-col gap-3 items-center justify-center" >
+        <main class="text-container">
+            <div class="flex flex-col gap-3 items-center justify-center">
                 <h1 class="text-3xl font-medium">Faça seu login</h1>
                 <p class="text-lg text-muted-foreground mb-5">Preencha seus dados</p>
             </div>
 
-            <form  name="form-cadastro" id="form-cadastro" method="post" action="">
+            <form name="form-cadastro" id="form-cadastro" method="post" action="">
                 <div class="input-container">
-                    <img src="./dist/images/e-mail.png" alt="ícone de um envelope representing email">
-                    <input class="outline-none" type="email" name="email-usuario" id="email-usuario" required placeholder="E-mail" autocomplete="email " >
-                </div>  
-                
+                    <img src="./dist/images/e-mail.png" alt="ícone email">
+                    <input class="outline-none" type="email" name="email-usuario" id="email-usuario" required placeholder="E-mail" autocomplete="email">
+                </div>
+
                 <div class="input-container">
-                    <img src="./dist/images/cadeado.png" alt="ícone de um cadeado">
+                    <img src="./dist/images/cadeado.png" alt="ícone cadeado">
                     <input class="outline-none" type="password" name="senha-usuario" id="senha-usuario" required placeholder="Senha">
                 </div>
 
                 <div>
-                    <button class="button-login hover:bg-color-button-hover transition-colors duration-300">Entrar</button>
-                    <div>
-                        <a class="flex flex-col items-center justify-center mt-5" href="">Esqueci minha senha</a>
-                    </div>
+                    <button class="button-login">Entrar</button>
+                    <a class="flex flex-col items-center justify-center mt-5" href="">Esqueci minha senha</a>
                 </div>
             </form>
         </main>
