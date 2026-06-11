@@ -21,6 +21,7 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
+    --font-weight-bold: 700;
     --font-weight-black: 900;
     --radius-xl: 0.75rem;
     --default-transition-duration: 150ms;
@@ -208,8 +209,8 @@
   .w-37\.5 {
     width: calc(var(--spacing) * 37.5);
   }
-  .w-125 {
-    width: calc(var(--spacing) * 125);
+  .w-full {
+    width: 100%;
   }
   .flex-1 {
     flex: 1;
@@ -229,9 +230,6 @@
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
-  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
@@ -244,10 +242,6 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
@@ -263,6 +257,9 @@
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -293,6 +290,10 @@
     --tw-font-weight: var(--font-weight-black);
     font-weight: var(--font-weight-black);
   }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -312,6 +313,11 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
   .duration-150 {
     --tw-duration: 150ms;
     transition-duration: 150ms;
@@ -319,17 +325,6 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
-  }
-  .focus-within\:border-purple-400 {
-    &:focus-within {
-      border-color: var(--color-purple-400);
-    }
-  }
-  .focus-within\:outline-none {
-    &:focus-within {
-      --tw-outline-style: none;
-      outline-style: none;
-    }
   }
   .hover\:bg-\[\#9867C5\] {
     &:hover {
@@ -345,16 +340,6 @@
       }
     }
   }
-  .max-md\:mx-1\.25 {
-    @media (width < 48rem) {
-      margin-inline: calc(var(--spacing) * 1.25);
-    }
-  }
-  .max-md\:w-75 {
-    @media (width < 48rem) {
-      width: calc(var(--spacing) * 75);
-    }
-  }
   .max-md\:w-full {
     @media (width < 48rem) {
       width: 100%;
@@ -365,11 +350,6 @@
       flex-direction: column;
     }
   }
-  .max-md\:px-6 {
-    @media (width < 48rem) {
-      padding-inline: calc(var(--spacing) * 6);
-    }
-  }
   .max-md\:py-8 {
     @media (width < 48rem) {
       padding-block: calc(var(--spacing) * 8);
@@ -378,6 +358,32 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+.input-container {
+  margin-bottom: calc(var(--spacing) * 3);
+  display: flex;
+  width: calc(var(--spacing) * 125);
+  align-items: center;
+  gap: calc(var(--spacing) * 4);
+  border-radius: var(--radius-xl);
+  border-style: var(--tw-border-style);
+  border-width: 2px;
+  border-color: var(--color-gray-300);
+  padding-inline: calc(var(--spacing) * 4);
+  padding-block: calc(var(--spacing) * 3);
+  &:focus-within {
+    border-color: var(--color-purple-400);
+  }
+  &:focus-within {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+  @media (width < 48rem) {
+    margin-inline: calc(var(--spacing) * 1.25);
+  }
+  @media (width < 48rem) {
+    width: calc(var(--spacing) * 75);
+  }
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
