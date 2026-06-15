@@ -3,4 +3,4 @@ Essa é a primeira tela da minha empresa CASHUP o projeto foi desenvolvido com e
 
 <img width="1366" height="640" alt="tela 1 projeto Fintech" src="https://github.com/user-attachments/assets/f94bfc39-54a4-4a9f-8d1d-d4676e6680bf" />
 
-link de acesso:
+link de acesso:https://cashup-fintech.netlify.app/
