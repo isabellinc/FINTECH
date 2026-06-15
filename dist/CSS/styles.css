@@ -188,6 +188,9 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
@@ -255,6 +258,26 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
+  }
+  .max-md\:mb-1 {
+    @media (width < 48rem) {
+      margin-bottom: calc(var(--spacing) * 1);
+    }
+  }
+  .max-md\:mb-2 {
+    @media (width < 48rem) {
+      margin-bottom: calc(var(--spacing) * 2);
+    }
+  }
+  .max-md\:mb-3 {
+    @media (width < 48rem) {
+      margin-bottom: calc(var(--spacing) * 3);
+    }
+  }
+  .max-md\:mb-5 {
+    @media (width < 48rem) {
+      margin-bottom: calc(var(--spacing) * 5);
+    }
   }
   .max-md\:flex-col {
     @media (width < 48rem) {
